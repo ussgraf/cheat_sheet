@@ -1,0 +1,34 @@
+-----
+help
+-----
+#show a list of windows dos' commands
+
+
+-----
+<command> /?
+-----
+#shows description details of specified command
+#i.e... del /?
+
+
+-----
+copy con <file-name>
+<optional-text>
+^Z
+-----
+#create a file with optional text
+#ctrl + z to apply exit command for text editor
+
+
+-----
+mkdir <directory-name>
+-----
+#create a directory within the current directory path
+
+
+-----
+rmdir /s <directory-name>
+-----
+#delete a directory and all it's children
+
+

@@ -1,0 +1,197 @@
+-----
+git status
+-----
+#returns the status of untracked and tracked files in your local git repository
+
+#basic workflow: untracked >> tracked
+#untracked files are new files in the git repository
+#tracked files are files that have been previously staged or committed
+#committed files have a snapshot saved into the git repository
+#staged files are a file snapshot that will be saved to the repository next comit
+#snapshots are a captured state of an entire file
+#while staged or commited, a file is tracked as either modified or unmodified
+
+#files have 2 status layers that can be true.. 
+#1 - tracked? -- only when tracked is TRUE is the 2nd status layer applicable
+#2 - staged?, comitted?, modified? -- a file can have any or all statuses be true
+
+
+-----
+git add <file>
+-----
+#takes files and marks them as staged
+
+#<file> is optional
+#<file>_present? - True -- Only specified file is staged
+#<file>_present? - False -- All files in current directory are staged
+
+
+-----
+git reset HEAD <file>
+-----
+#unstages files so they won't be added to the repository next commit
+
+#<file> is optional
+#<file>_present? - True -- only specified file is unstaged
+#<file>_present? - False -- All files in current directory are unstaged
+
+
+-----
+.gitignore
+-----
+#this is a file that can be put in a directory
+#this file will ignore specified files or directories
+#specify files/ directories with glob patterns (similar to regular expressions)
+
+
+-----
+git diff
+git diff --staged
+-----
+#shows what content has changed in files
+
+
+-----
+git commit --amend
+-----
+#replaces your last commit with the staging area
+#allows you to update, delete, add new files and commit messages
+
+
+-----
+git checkout -- <file>
+-----
+#used only for modified files
+#reverts the file on your local disk back to the snapshot in the local repository
+
+
+-----
+git remote <-v>
+-----
+#displays the shortname of each remote server specified
+#-v is optional and when used will add the url Git has stored for the shorthand
+#git diff shows what has changed in files not yet staged
+#git diff --stages shows what has changed in files that are staged
+
+
+-----
+git commit
+-----
+#saves files changes to your local git repository
+
+
+-----
+git mv from_file_name to_file_name
+-----
+#renames a file from from_file_name to to_file_name
+
+
+-----
+git log <-p>
+-----
+#shows history of commits made in the current repository
+#by default the history displays the more recent commits first
+#-p is optional -- it displays the line differences between commits
+#http://git-scm.com/book/en/Git-Basics-Viewing-the-Commit-History
+
+
+-----
+git remote <-v>
+-----
+#Lists shortnames of each remote handle you've specified
+#-v is optional, it displays the url Git has stored for the shortname
+
+
+-----
+git remote add <shortname> <url>
+-----
+#Adding a Git remote repository as a shortname
+#After a remote repository is added it can be called by shortname instead of url
+#i.e. -- fetch pb
+#intead of -- fetch git://github.com/mgraf/mgraf.git
+
+
+-----
+git fetch <shortname/url>
+-----
+#Gets new work that has been pushed to the server repository
+#Puts the server repository over your local repository
+#Does not automatically merge your current work with your local repository
+
+
+-----
+git pull
+-----
+#fetches changes from the server
+#Automatically merges current work with your local repository
+
+
+-----
+git push <remote-name> <branch-name>
+-----
+#Saves your work form your local repository to the server
+#If someone else pushed changes you have to pull the changes merge them then push
+
+
+-----
+git remote show <remote-name>
+-----
+#shows more information about the designated remote connection
+
+
+-----
+git remote rename <from-shortname> <to-shortname>
+-----
+#renames a branch's shortname
+
+
+-----
+git remote rm <shortname>
+-----
+#removes a remote connection's shortname and restores it to the default of origin
+
+
+-----
+git tag
+-----
+#shows the available tags
+#tagging can be done to track versions
+#to learn to tag see... http://git-scm.com/book/en/Git-Basics-Tagging
+
+
+-----
+git autocompletion
+-----
+#using to tab to use autocomplete suggestoins
+#http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks
+
+
+-----
+git aliases
+-----
+#create custom aliases to run designated git commands
+#http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks
+
+
+-----
+git branching
+-----
+#The basic of repository branching...
+#http://git-scm.com/book/en/Git-Branching-What-a-Branch-Is
+
+
+-----
+git branch <branch-name>
+-----
+#creates a new pointer on the repository commit you're currently on
+#the main branch is called the master branch
+
+
+-----
+git checkout <branch-name>
+-----
+#sets a special pointer called HEAD to the specified branch
+#commits will only occur for the checked out branch
+
+
+-----

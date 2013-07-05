@@ -32,3 +32,7 @@ rmdir /s <directory-name>
 #delete a directory and all it's children
 
 
+-----
+start .
+-----
+#opens the current directory in windows explorer

@@ -1,0 +1,20 @@
+OS:
+Windows 7
+
+Programming Languages:
+Ruby
+
+IDE:
+RubyMine
+
+VCS:
+Git
+
+VCS Tools:
+Git Extensions
+
+Testing Framework:
+Cucumber
+Watir
+ActiveRecord
+FactoryGirl

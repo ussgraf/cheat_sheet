@@ -1,20 +1,48 @@
 OS:
-Windows 7
+  Windows 7
 
 Programming Languages:
-Ruby
+  Ruby - http://rubyinstaller.org/downloads/
+    Documentation - http://ruby-doc.org/
+    DevKit - http://rubyinstaller.org/downloads/
+    Pik - https://github.com/vertiginous/pik
+
+Console (Shell):
+  DOS (Windows Command Prompt)
+    Ansicon - https://github.com/adoxa/ansicon
 
 IDE:
-RubyMine
+  RubyMine - http://www.jetbrains.com/ruby/download/
+
+Text Editor:
+  Notepad++ - http://notepad-plus-plus.org/download/
 
 VCS:
-Git
+  Git - http://git-scm.com/downloads
+    GitHub Windows - http://windows.github.com/
+    Documentaiton:
+      *Official - http://git-scm.com/documentation
+      *Cheat sheet - https://na1.salesforce.com/help/doc/en/salesforce_git_developer_cheatsheet.pdf
+      *Visual Cheat sheet - http://ndpsoftware.com/git-cheatsheet.html
 
 VCS Tools:
-Git Extensions
+  Git Extensions - https://code.google.com/p/gitextensions/
+  Diff Tool - kdiff -- http://kdiff3.sourceforge.net/
+
+Web Development Framework:
+  Ruby on Rails - from the console run -- gem install rails
 
 Testing Framework:
-Cucumber
-Watir
-ActiveRecord
-FactoryGirl
+  Cucumber - after install ruby, from the console run -- gem install cucumber
+  Watir-WebDriver - from the console run -- gem install Watir-WebDriver
+  ActiveRecord - from the console run -- gem install activerecord
+  Factory_Girl - from the console run -- gem install factory_girl
+
+Watir Browser Drivers:
+  FireFox- works oob
+  Chrome- chromedriver -- https://code.google.com/p/chromedriver/downloads/list
+    * using chromedriver with watir - http://watirwebdriver.com/chrome/
+      * driver must be placed in the environment's PATH
+  IE - iedriverserver -- https://code.google.com/p/selenium/downloads/list 
+    * using IE with watir - http://watirwebdriver.com/internet-explorer/
+      * driver must be placed in the environment's PATH
